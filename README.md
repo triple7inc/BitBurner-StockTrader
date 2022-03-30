@@ -1,5 +1,5 @@
 # BitBurner-StockTrader
-Trades stocks 1 run = 1 deal, also has Safety Orders, default is 5 (change in the script)
+Trades stocks, 1 run = 1 deal, also uses Safety Orders, default is 5 (change in the script)
 
 ## Contents
 - trader.js `22.10 GB`
