@@ -1,0 +1,9 @@
+if(args.length){
+	var a=parseInt(args[0]);
+	if(!a)a=getPlayer().money;
+	tprint("Executing '"+getScriptName()+"'...");
+	while(true){
+		run("trader.js",1,1,a,1);
+		sleep(3000);
+	}
+}
