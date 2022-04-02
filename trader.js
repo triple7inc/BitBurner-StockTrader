@@ -98,7 +98,7 @@ export async function main(ns){
 				}else{
 					var soldprice=ordered*s;
 					ns.tprint("Sold "+ordered+" shares for $"+format(soldprice)+" at $"+format(s)+" each");
-					ns.tprint("Profit of $"+format(soldprice-price)+" at $"+format(s-b)+" each");
+					ns.tprint("Profit of $"+format(soldprice-price));
 					if(silent)ns.tprint(" ");
 					sold=true
 				}
