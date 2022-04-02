@@ -39,7 +39,7 @@ export async function main(ns){
 	var stockPrice=ns.stock.getAskPrice(sym);
 	if(!silent)ns.tprint(sym+"/> "+"Stock price: $"+format(stockPrice));
 	var totalStocks=Math.floor((money-1e5)/stockPrice);
-	var perOrder=Math.floor(totalStocks/maxSafetyOrders+1);
+	var perOrder=Math.floor(totalStocks/(maxSafetyOrders+1));
 	var maxStocks=ns.stock.getMaxShares(sym);
 	if(perOrder>maxStocks)perOrder=Math.floor(maxStocks/maxSafetyOrders+1);
 	var priceStocks=(stockPrice*perOrder)+1e5;
